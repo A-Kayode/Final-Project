@@ -1,0 +1,269 @@
+<!doctype html>
+<html>
+<head>
+<title></title>
+<meta charset= "UTF-8">
+<meta name= "viewport" content= "width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel= "stylesheet" type= "text/css" href= "../libraries/bootstrap/css/bootstrap.css">
+<link rel= "stylesheet" type= "text/css" href= "external_files/stylesheet.css">
+<style type= "text/css">
+	div{border: 0px solid red;}
+</style>
+</head>
+
+<body>
+<div class= "container-md">
+	<!-- Navigation -->
+	<div class= "row">
+		<div class= "col">
+			<nav class="navbar navbar-expand-md">
+			  <div class="container-fluid">
+			    <a class="navbar-brand" href="#"><span id= "site_name">CinchWorks<span></a>
+			    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#homenav" aria-controls="homenav" aria-expanded="false" aria-label="Toggle navigation">
+			      <span class="navbar-toggler-icon"></span>
+			    </button>
+			    <div class="collapse navbar-collapse" id="homenav">
+			      <ul class="navbar-nav me-auto mb-2 mb-lg-0 offset-0 offset-sm-3 offset-lg-5 offset-xl-8">
+			        <li class="nav-item">
+			          <a class="nav-link text-dark" aria-current="page" href="vendor_home.html">Home</a>
+			        </li>
+			        <li class="nav-item">
+			          <a class="nav-link text-dark" href="vendor_booking_page.html">Bookings</a>
+			        </li>
+			        <li class="nav-item dropdown">
+			          <a class="nav-link dropdown-toggle  text-dark" id= "user_setting_menu" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+			          	Username
+			          </a>
+			          <ul class="dropdown-menu" aria-labelledby="user_setting_menu">
+			            <li><a class="dropdown-item" href="vendor_settings.html">Settings</a></li>			  
+			            <li><hr class="dropdown-divider"></li>
+			            <li><a class="dropdown-item" href="index.html">Log Out</a></li>
+			          </ul>
+			        </li>
+			      </ul>
+			    </div>
+			  </div>
+			</nav>
+		</div>
+	</div>
+
+
+	<!-- Page Title -->
+	<div class= "row my-1 my-sm-3 welcome">
+		<div class= "col">
+			<h2 class= "text-center">Bookings</h2>
+		</div>
+	</div>
+
+
+	<!-- Pending Requests -->
+	<div class= "row my-1 my-sm-2 blueback">
+		<div class= "col">
+			<h3 class="text-center my-2 my-sm-4" id= "pending_request">Pending Requests</h3>
+			<div class= "row">
+				<div class= "col">
+					<table class= "table">
+						<thead>
+							<th class= "hidemd">Booking ID</th>
+							<th>Customer Name</th>
+							<th>Location</th>
+							<th>Date</th>
+							<th class= "hidesm">Time</th>
+							<th class= "hidemd">Time of Booking</th>
+							<th class= "hidesm">Confirm/Reject</th>
+						</thead>
+						<tbody>
+							<tr>
+								<td class= "hidemd"></td>
+								<td>Customer 1</td>
+								<td></td>
+								<td></td>
+								<td class= "hidesm"></td>
+								<td class= "hidemd"></td>
+								<td class= "hidesm"></td>
+							</tr>
+							<tr>
+								<td class= "hidemd"></td>
+								<td>Customer 2</td>
+								<td></td>
+								<td></td>
+								<td class= "hidesm"></td>
+								<td class= "hidemd"></td>
+								<td class= "hidesm"></td>
+							</tr>
+							<tr>
+								<td class= "hidemd"></td>
+								<td>Customer 3</td>
+								<td></td>
+								<td></td>
+								<td class= "hidesm"></td>
+								<td class= "hidemd"></td>
+								<td class= "hidesm"></td>
+							</tr>
+							<tr>
+								<td class= "hidemd"></td>
+								<td>Customer 4</td>
+								<td></td>
+								<td></td>
+								<td class= "hidesm"></td>
+								<td class= "hidemd"></td>
+								<td class= "hidesm"></td>
+							</tr>
+							<tr>
+								<td class= "hidemd"></td>
+								<td>Customer 5</td>
+								<td></td>
+								<td></td>
+								<td class= "hidesm"></td>
+								<td class= "hidemd"></td>
+								<td class= "hidesm"></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- Active Bookings -->
+	<div class= "row my-2 my-sm-5 blueback">
+		<div class= "col">
+			<h3 class="text-center my-2 my-sm-4" id= "active_bookings">Active Requests</h3>
+			<div class= "row">
+				<div class= "col">
+					<table class= "table">
+						<thead>
+							<th class= "hidesm">Booking ID</th>
+							<th>Customer Name</th>
+							<th class= "hidesm">Services</th>
+							<th>Location</th>
+							<th>Date</th>
+							<th class= "hidemd">Time</th>
+						</thead>
+						<tbody>
+							<tr>
+								<td class= "hidesm"></td>
+								<td>Customer 1</td>
+								<td class= "hidesm"></td>
+								<td></td>
+								<td></td>
+								<td class= "hidemd"></td>
+							</tr>
+							<tr>
+								<td class= "hidesm"></td>
+								<td>Customer 2</td>
+								<td class= "hidesm"></td>
+								<td></td>
+								<td></td>
+								<td class= "hidemd"></td>
+							</tr>
+							<tr>
+								<td class= "hidesm"></td>
+								<td>Customer 3</td>
+								<td class= "hidesm"></td>
+								<td></td>
+								<td></td>
+								<td class= "hidemd"></td>
+							</tr>
+							<tr>
+								<td class= "hidesm"></td>
+								<td>Customer 4</td>
+								<td class= "hidesm"></td>
+								<td></td>
+								<td></td>
+								<td class= "hidemd"></td>
+							</tr>
+							<tr>
+								<td class= "hidesm"></td>
+								<td>Customer 5</td>
+								<td class= "hidesm"></td>
+								<td></td>
+								<td></td>
+								<td class= "hidemd"></td>
+							</tr>
+							<tr>
+								<td class= "hidesm"></td>
+								<td>Customer 6</td>
+								<td class= "hidesm"></td>
+								<td></td>
+								<td></td>
+								<td class= "hidemd"></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- Booking History -->
+	<div class= "row my-1 my-sm-2 blueback">
+		<div class= "col">
+			<h3 class= "my-2 my-sm-4 text-center" id= "booking_history">Booking History</h3>
+			<div class= "row">
+				<div class= "col">
+					<table class= "table">
+						<thead>
+							<th class= "hidesm">Booking ID</th>
+							<th>Customer Name</th>
+							<th class= "hidesm">Services</th>
+							<th class= "hidesm">Location</th>
+							<th>Date</th>
+							<th class= "hidesm">Time</th>
+							<th>Status</th>
+						</thead>
+						<tbody>
+
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</div>
+
+<!-- This div wil contain the footer area -->
+<div class= "container-fluid">
+	<div class= "row allfooter">
+		<div class= "col-2">
+			<ul style= "list-style-type: none;" class= "footerlist">
+				<li><a href= "vendor_home.html" class= "nav-link text-light">Home</a></li>
+				<li><a href= "index.html" class= "nav-link text-light">Logout</a></li>
+				<li><a href= "site_faq.html" target= "_blank" class= "nav-link text-light">FAQ</a></li>
+				<li><a href= "site_contact.html" target= "_blank" class= "nav-link text-light">Contact Us</a></li>
+			</ul>
+		</div>
+		<div class= "col-3">
+			<ul style= "list-style-type: none;" class= "footerlist">
+				<li>
+					<a class= "nav-link text-light" href= "vendor_booking_page.html">Booking</a>
+					<ul>
+			            <li><a class="text-light" href="vendor_booking_page.html#pending_requests" style= "text-decoration: none;">Pending Requestss</a></li>
+			            <li><a class="text-light" href="vendor_booking_page.html#active_bookings" style= "text-decoration: none;">Pending Requestss</a></li>
+			            <li><a class="text-light" href="vendor_booking_page.html#booking_history"style= "text-decoration: none;">Booking History</a></li>
+			         </ul>
+				</li>
+				<li><a href= "vendor_settings.html" class= "nav-link text-light">Settings</a></li>
+			</ul>
+		</div>
+		<div class= "col mt-3">
+			<p><a href= "#"><img src= "images/twitter.png" alt= "twitter icon" height="32"></a></p>
+			<p><a href= "#"><img src= "images/facebook.png" alt= "facebook icon" height="32"></a></p>
+			<p><a href= "#"><img src= "images/instagram.png" alt= "instagram icon" height="32"></a></p>
+		</div>
+	</div>
+</div>
+
+
+<!-- JS Files -->
+<script type= "text/javascript" src= "../libraries/jquery.js"></script>
+<script type= "text/javascript" src= "../libraries/bootstrap/js/bootstrap.bundle.js"></script>
+<script type= "text/javascript">
+
+
+</script>
+</body>
+</html>

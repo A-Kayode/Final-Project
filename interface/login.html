@@ -1,0 +1,116 @@
+<!doctype html>
+<html>
+<head>
+<title></title>
+<meta charset= "UTF-8">
+<meta name= "viewport" content= "width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel= "stylesheet" type= "text/css" href= "../libraries/bootstrap/css/bootstrap.css">
+<link rel= "stylesheet" type= "text/css" href= "external_files/stylesheet.css">
+<style type= "text/css">
+	div{border: 0px solid red;}
+	body{background: linear-gradient(to bottom, white, rgba(49, 49, 193, 1));}
+</style>
+</head>
+
+<body>
+<div class= "container-fluid">
+	<!-- This div will contain the navigation bar -->
+	<div class= "row navigationbar">
+		<div class= "col">
+			<nav class="navbar navbar-expand-md">
+			  <div class="container-fluid">
+			    <a class="navbar-brand" href="#"><span id= "site_name">CinchWorks<span></a>
+			    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#homenav" aria-controls="homenav" aria-expanded="false" aria-label="Toggle navigation">
+			      <span class="navbar-toggler-icon"></span>
+			    </button>
+			    <div class="collapse navbar-collapse" id="homenav">
+			      <ul class="navbar-nav me-auto mb-2 mb-lg-0 offset-md-2 offset-lg-6">
+			        <li class="nav-item">
+			          <a class="nav-link" href="index.html">Home</a>
+			        </li>
+			         <li class="nav-item">
+			          <a class="nav-link" href="signup.html">Sign Up</a>
+			        </li>
+			        <li class="nav-item">
+			          <a class="nav-link" href="site_faq.html">FAQ</a>
+			        </li>
+			        <li class="nav-item">
+			          <a class="nav-link" href="site_contact.html">Contact Us</a>
+			        </li>
+			      </ul>
+			    </div>
+			  </div>
+			</nav>
+		</div>
+	</div>
+
+
+
+	<div class= "row mt-3">
+		<div class= "col-md-6 offset-md-3" id= "logincol">
+				<h2 class= "mb-2">LOGIN</h2>
+					<form action= "user_home.html" id= "login_form2">
+						<div class= "mb-1">
+							<label class= "form-label">Username</label>
+							<input type= "text" class= "form-control" name= "username">
+						</div>
+						<div class= "mb-1">
+							<label class= "form-label">Password</label>
+							<input type= "password" class= "form-control" name= "password">
+						</div>
+						<div class= "mb-1">
+							<input type= "radio" class= "" name= "user_type" id= "sel_customer">
+							<label class= "form-label" for= "sel_customer">Customer</label>
+							<input type= "radio" class= "" name= "user_type" id= "sel_vendor">
+							<label class= "form-label" for= "sel_vendor">Vendor</label>	
+						</div>
+						<button class= "btn homebutton">Login</button>
+					</form>
+
+				<p>New User? Register <span><a href= "signup.html" class= "text-dark">here</a></span></p>
+			</div>
+	</div>
+
+
+<!-- This div wil contain the footer area -->
+<!-- This div wil contain the footer area -->
+<div class= "row allfooter">
+	<div class= "col-5 col-3-md">
+		<ul style= "list-style-type: none;" class= "footerlist">
+			<li><a href= "index.html" class= "nav-link text-light">Home</a></li>
+			<li><a href= "login.html" class= "nav-link text-light">Login/Sign Up</a></li>
+			<li><a href= "site_faq.html" class= "nav-link text-light">FAQ</a></li>
+			<li><a href= "site_contact.html" class= "nav-link text-light">Contact Us</a></li>
+		</ul>
+	</div>
+	<div class= "col">
+		<div class= "row"></div>
+		<div class= "row mt-5">
+			<div class= "col">
+				<p><a href= "#"><img src= "images/twitter.png" alt= "twitter icon" height="32"></a></p>
+				<p><a href= "#"><img src= "images/facebook.png" alt= "facebook icon" height="32"></a></p>
+				<p><a href= "#"><img src= "images/instagram.png" alt= "instagram icon" height="32"></a></p>
+			</div>
+		</div>
+		<div class= "row"></div>
+		
+	</div>
+</div>
+
+<!-- JS Files -->
+<script type= "text/javascript" src= "../libraries/jquery.js"></script>
+<script type= "text/javascript" src= "../libraries/bootstrap/js/bootstrap.bundle.js"></script>
+<script type= "text/javascript">
+$(document).ready(function(){
+	$('#sel_customer').prop('checked', true);
+	$('#sel_vendor').click(function(){
+		$('#login_form2').attr('action', 'vendor_home.html')
+	});
+	$('#sel_customer').click(function(){
+		$('#login_form2').attr('action', 'user_home.html')
+	});
+});
+
+</script>
+</body>
+</html>

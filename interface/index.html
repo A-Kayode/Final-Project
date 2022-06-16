@@ -1,0 +1,158 @@
+<!doctype html>
+<html>
+<head>
+<title>CinchWorks</title>
+<meta charset= "UTF-8">
+<meta name= "viewport" content= "width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel= "stylesheet" type= "text/css" href= "../libraries/bootstrap/css/bootstrap.css">
+<link rel= "stylesheet" type= "text/css" href= "external_files/stylesheet.css">
+<style type= "text/css">
+	div{ border: 0px solid red; }
+	.innercontainer{
+		background-image: url(images/carpenter3.jpg);
+		background-size: 100% 100%;
+	}
+	.overlay{ background-color:rgba(0,0,0,0.5) }
+</style>
+</head>
+
+<body>
+<div class= "container-fluid">
+	<!-- This div will contain the navigation bar -->
+	<div class= "row navigationbar">
+		<div class= "col">
+			<nav class="navbar navbar-expand-md bg-light">
+			  <div class="container-fluid">
+			    <a class="navbar-brand" href="#"><span id= "site_name">CinchWorks<span></a>
+			    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#homenav" aria-controls="homenav" aria-expanded="false" aria-label="Toggle navigation">
+			      <span class="navbar-toggler-icon"></span>
+			    </button>
+			    <div class="collapse navbar-collapse" id="homenav">
+			      <ul class="navbar-nav me-auto mb-2 mb-lg-0 offset-0 offset-sm-3 offset-lg-5 offset-xl-7">
+			        <li class="nav-item">
+			          <a class="nav-link" href="index.html">Home</a>
+			        </li>
+			         <li class="nav-item">
+			          <a class="nav-link" href="signup.html">Sign Up</a>
+			        </li>
+			        <li class="nav-item">
+			          <a class="nav-link" href="site_faq.html">FAQ</a>
+			        </li>
+			        <li class="nav-item">
+			          <a class="nav-link" href="site_contact.html">Contact Us</a>
+			        </li>
+			      </ul>
+			    </div>
+			  </div>
+			</nav>
+		</div>
+	</div>
+
+<div class= "innercontainer">
+<div class= "overlay">
+<div class= "container-md">
+
+	<div class= "row pt-2 ms-md-5">
+		<div class= "col offset-sm-2 offset-lg-6">
+			<form class= "row row-cols-md-auto" action= "user_home.html" id= "login_form">
+				<div class= "col-12 gx-2 gy-2 gy-md-0">
+					<input type= "text" name= "username" class= "form-control" placeholder="Username">
+				</div>
+				<div class= "col-12 gx-2 gy-2 gy-md-0">
+					<input type= "password" name= "password" class= "form-control" placeholder="Password">
+				</div>
+				<div class= "col-12 gx-2 gy-2 gy-md-0">
+					<button class= "btn brownbutton">Login</button>
+				</div>
+				<div class= "col-12 gx-2 gy-2 gy-md-0">
+					<input type= "radio" name= "user_type" class= "" id= "sel_customer">
+					<label class= "form-check-label text-light me-3" for= "sel_customer">Customer</label>
+					<input type= "radio" name= "user_type" class= "" id= "sel_vendor">
+					<label class= "form-check-label text-light" for= "sel-vendor">Vendor</label>
+				</div>
+				
+
+			</form>
+		</div>
+	</div>
+
+	<!-- This contains the basic search field to find vendors. Will also contain navigation for the most common/popular vendor categories-->
+	<div class= "row homesearch">
+		<div class= "col mb-5">
+			<form>
+				<div class= "row">
+					<div class= "col-sm-8 offset-0 offset-sm-2 mb-2">
+						<input type= "text" class= "form-control rounded-pill" name= "vendor_search" placeholder= "Find Workers or Services" id= "home_searchinput">
+					</div>
+				</div>
+				<div class= "row">
+					<div class= "col">
+						<button class= "btn homebutton col-md-2 offset-5">Search</button>
+					</div>
+				</div>	
+			</form>
+		</div>	
+	</div>
+
+
+	<!-- Description -->
+	<div class= "row" id= "home_sitedescription">
+		<div class= "col-sm-9 offset-sm-2" id= "home_sitedescriptioncol" >
+			<p>CinchWorks helps connect you with thousands of vendors and lets you manage manage your schedule with them.</p>
+			<p>With CinchWorks, you work and find work your way, all on your own schedule.</p>
+		</div>
+
+		<!-- This contains the login form -->
+		
+	</div>
+
+</div>
+</div>
+</div>
+
+<!-- This div wil contain the footer area -->
+<div class= "row allfooter">
+	<div class= "col-5 col-3-md">
+		<ul style= "list-style-type: none;" class= "footerlist">
+			<li><a href= "index.html" class= "nav-link text-light">Home</a></li>
+			<li><a href= "login.html" class= "nav-link text-light">Login/Sign Up</a></li>
+			<li><a href= "site_faq.html" class= "nav-link text-light">FAQ</a></li>
+			<li><a href= "site_contact.html" class= "nav-link text-light">Contact Us</a></li>
+		</ul>
+	</div>
+	<div class= "col">
+		<div class= "row"></div>
+		<div class= "row mt-5">
+			<div class= "col">
+				<p><a href= "#"><img src= "images/twitter.png" alt= "twitter icon" height="32"></a></p>
+				<p><a href= "#"><img src= "images/facebook.png" alt= "facebook icon" height="32"></a></p>
+				<p><a href= "#"><img src= "images/instagram.png" alt= "instagram icon" height="32"></a></p>
+			</div>
+		</div>
+		<div class= "row"></div>
+		
+	</div>
+
+</div>
+
+
+
+
+
+<!-- JS Files -->
+<script type= "text/javascript" src= "../libraries/jquery.js"></script>
+<script type= "text/javascript" src= "../libraries/bootstrap/js/bootstrap.bundle.js"></script>
+<script type= "text/javascript">
+$(document).ready(function(){
+	$('#sel_customer').prop('checked', true);
+	$('#sel_vendor').click(function(){
+		$('#login_form').attr('action', 'vendor_home.html')
+	});
+	$('#sel_customer').click(function(){
+		$('#login_form').attr('action', 'user_home.html')
+	});
+});
+
+</script>
+</body>
+</html>

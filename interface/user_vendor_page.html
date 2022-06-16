@@ -1,0 +1,418 @@
+<!doctype html>
+<html>
+<head>
+<title></title>
+<meta charset= "UTF-8">
+<meta name= "viewport" content= "width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel= "stylesheet" type= "text/css" href= "../libraries/bootstrap/css/bootstrap.css">
+<link rel= "stylesheet" type= "text/css" href= "external_files/stylesheet.css">
+<style type= "text/css">
+	div{border: 0px solid red;}
+</style>
+</head>
+
+<body>
+<div class= "container-md">
+	<!-- Navigation -->
+	<div class= "row">
+		<div class= "col">
+			<nav class="navbar navbar-expand-md">
+			  <div class="container-fluid">
+			    <a class="navbar-brand" href="#"><span id= "site_name">CinchWorks<span></a>
+			    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#homenav" aria-controls="homenav" aria-expanded="false" aria-label="Toggle navigation">
+			      <span class="navbar-toggler-icon"></span>
+			    </button>
+			    <div class="collapse navbar-collapse" id="homenav">
+			      <ul class="navbar-nav me-auto mb-2 mb-lg-0 offset-0 offset-sm-3 offset-lg-5 offset-xl-8">
+			        <li class="nav-item">
+			          <a class="nav-link text-dark" aria-current="page" href="user_home.html">Home</a>
+			        </li>
+			        <li class="nav-item">
+			          <a class="nav-link text-dark" href="user_booking_history.html">Bookings</a>
+			        </li>
+			        <li class="nav-item dropdown">
+			          <a class="nav-link dropdown-toggle  text-dark" id= "user_setting_menu" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+			          	Username
+			          </a>
+			          <ul class="dropdown-menu" aria-labelledby="user_setting_menu">
+			            <li><a class="dropdown-item" href="user_settings.html">Settings</a></li>			  
+			            <li><hr class="dropdown-divider"></li>
+			            <li><a class="dropdown-item" href="index.html">Log Out</a></li>
+			          </ul>
+			        </li>
+			      </ul>
+			    </div>
+			  </div>
+			</nav>
+		</div>
+	</div>
+
+
+	<!-- Banner -->
+	<div class= "row">
+		<div class= "col">
+			<img src= "images/banner.jpg" alt= "Vendor Banner" class= "vendor_banner">
+		</div>
+	</div>
+
+
+	<!-- Welcome Message plus stats and small vendor description-->
+	<div class= "row welcome">
+		<div class= "col">
+			<div class= "row">
+				<div class= "col-4 col-md-3 offset-5">
+					<img src= "images/profile_pic2.jpg" alt= "" class= "img-fluid profile_pic" id= "uservendor_profilepic">
+				</div>
+			</div>
+			<div class= "row">
+				<div class= "col">
+					<h4 class= "text-center">Vendor Name</h4>
+					<p class= "text-center">Brief description/overview of vendor's services plus average rating</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- Calender -->
+	<div class= "row mt-md-3">
+		<div class= "col">
+			<div class= "row">
+				<div class= "col m-2 calen_day" id= "cal_1">
+					<p><b>Date</b></p>
+					<p class= "user_cal_det">09:00: <span></span></p>
+					<hr>
+					<p class= "user_cal_det">10:00: <span></span></p>
+					<hr>
+					<p class= "user_cal_det">11:00: <span></span></p>
+					<hr>
+					<p class= "user_cal_det">12:00: <span></span></p>
+					<hr>
+					<p class= "user_cal_det">13:00: <span></span></p>
+					<hr>
+					<p class= "user_cal_det">14:00: <span></span></p>
+					<hr>
+					<p class= "user_cal_det">15:00: <span></span></p>
+					<hr>
+					<p class= "user_cal_det">16:00: <span></span></p>
+					<hr>
+					<p class= "user_cal_det">17:00: <span></span></p>
+					<hr>
+				</div>
+				<div class= "col m-2 calen_day" id= "cal_2">
+					<p><b>Date</b></p>
+					<p class= "user_cal_det">09:00: <span></span></p>
+					<hr>
+					<p class= "user_cal_det">10:00: <span></span></p>
+					<hr>
+					<p class= "user_cal_det">11:00: <span></span></p>
+					<hr>
+					<p class= "user_cal_det">12:00: <span></span></p>
+					<hr>
+					<p class= "user_cal_det">13:00: <span></span></p>
+					<hr>
+					<p class= "user_cal_det">14:00: <span></span></p>
+					<hr>
+					<p class= "user_cal_det">15:00: <span></span></p>
+					<hr>
+					<p class= "user_cal_det">16:00: <span></span></p>
+					<hr>
+					<p class= "user_cal_det">17:00: <span></span></p>
+					<hr>
+				</div>
+				<div class= "col m-2 calen_day d-none d-md-block" id= "cal_3">
+					<p><b>Date</b></p>
+					<p class= "user_cal_det">09:00: <span></span></p>
+					<hr>
+					<p class= "user_cal_det">10:00: <span></span></p>
+					<hr>
+					<p class= "user_cal_det">11:00: <span></span></p>
+					<hr>
+					<p class= "user_cal_det">12:00: <span></span></p>
+					<hr>
+					<p class= "user_cal_det">13:00: <span></span></p>
+					<hr>
+					<p class= "user_cal_det">14:00: <span></span></p>
+					<hr>
+					<p class= "user_cal_det">15:00: <span></span></p>
+					<hr>
+					<p class= "user_cal_det">16:00: <span></span></p>
+					<hr>
+					<p class= "user_cal_det">17:00: <span></span></p>
+					<hr>
+				</div>
+				<div class= "col m-2 calen_day d-none d-md-block" id= "cal_4">
+					<p><b>Date</b></p>
+					<p class= "user_cal_det">09:00: <span></span></p>
+					<hr>
+					<p class= "user_cal_det">10:00: <span></span></p>
+					<hr>
+					<p class= "user_cal_det">11:00: <span></span></p>
+					<hr>
+					<p class= "user_cal_det">12:00: <span></span></p>
+					<hr>
+					<p class= "user_cal_det">13:00: <span></span></p>
+					<hr>
+					<p class= "user_cal_det">14:00: <span></span></p>
+					<hr>
+					<p class= "user_cal_det">15:00: <span></span></p>
+					<hr>
+					<p class= "user_cal_det">16:00: <span></span></p>
+					<hr>
+					<p class= "user_cal_det">17:00: <span></span></p>
+					<hr>
+				</div>
+				<div class= "col m-2 calen_day d-none d-lg-block" id= "cal_5">
+					<p><b>Date</b></p>
+					<p class= "user_cal_det">09:00: <span></span></p>
+					<hr>
+					<p class= "user_cal_det">10:00: <span></span></p>
+					<hr>
+					<p class= "user_cal_det">11:00: <span></span></p>
+					<hr>
+					<p class= "user_cal_det">12:00: <span></span></p>
+					<hr>
+					<p class= "user_cal_det">13:00: <span></span></p>
+					<hr>
+					<p class= "user_cal_det">14:00: <span></span></p>
+					<hr>
+					<p class= "user_cal_det">15:00: <span></span></p>
+					<hr>
+					<p class= "user_cal_det">16:00: <span></span></p>
+					<hr>
+					<p class= "user_cal_det">17:00: <span></span></p>
+					<hr>
+				</div>
+				<div class= "col m-2 calen_day d-none d-lg-block"  id= "cal_6">
+					<p><b>Date</b></p>
+					<p class= "user_cal_det">09:00: <span></span></p>
+					<hr>
+					<p class= "user_cal_det">10:00: <span></span></p>
+					<hr>
+					<p class= "user_cal_det">11:00: <span></span></p>
+					<hr>
+					<p class= "user_cal_det">12:00: <span></span></p>
+					<hr>
+					<p class= "user_cal_det">13:00: <span></span></p>
+					<hr>
+					<p class= "user_cal_det">14:00: <span></span></p>
+					<hr>
+					<p class= "user_cal_det">15:00: <span></span></p>
+					<hr>
+					<p class= "user_cal_det">16:00: <span></span></p>
+					<hr>
+					<p class= "user_cal_det">17:00: <span></span></p>
+					<hr>
+				</div>
+				<div class= "col m-2 calen_day d-none d-lg-block" id= "cal_7">
+					<p><b>Date</b></p>
+					<p class= "user_cal_det">09:00: <span></span></p>
+					<hr>
+					<p class= "user_cal_det">10:00: <span></span></p>
+					<hr>
+					<p class= "user_cal_det">11:00: <span></span></p>
+					<hr>
+					<p class= "user_cal_det">12:00: <span></span></p>
+					<hr>
+					<p class= "user_cal_det">13:00: <span></span></p>
+					<hr>
+					<p class= "user_cal_det">14:00: <span></span></p>
+					<hr>
+					<p class= "user_cal_det">15:00: <span></span></p>
+					<hr>
+					<p class= "user_cal_det">16:00: <span></span></p>
+					<hr>
+					<p class= "user_cal_det">17:00: <span></span></p>
+					<hr>
+				</div>
+			</div>
+			<div class= "row mt-2">
+				<div class= "col">
+					<button data-bs-toggle= "offcanvas" data-bs-target= "#book_offcanvas" type= "button" class= "btn brownbutton offset-md-9 offset-lg-10">Book Vendor</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- Services -->
+	<div class= "row mt-3 blueback">
+		<div class= "col">
+			<h3>Services</h3>
+			<div class= "row">
+				<div class= "col">
+					<table class= "table">
+						<thead>
+							<th>Service</th>
+							<th class= "hidemd">Description</th>
+							<th class= "hidemd">Average Duration</th>
+							<th>Price</th>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Service 1</td>
+								<td class= "hidemd"></td>
+								<td class= "hidemd"></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>Service 2</td>
+								<td class= "hidemd"></td>
+								<td class= "hidemd"></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>Service 3</td>
+								<td class= "hidemd"></td>
+								<td class= "hidemd"></td>
+								<td></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<div class= "row mt-1">
+				<div class= "col">
+					<button data-bs-toggle= "offcanvas" data-bs-target= "#book_offcanvas" type= "button" class= "btn brownbutton offset-md-9 offset-lg-10">Book Services</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Reviews -->
+	<div class= "row mt-5 blueback">
+		<div class= "col">
+			<h3>User Reviews</h3>
+			<div class= "row">
+				<div class= "col">
+					<form>
+						<textarea class= "form-control mb-2" placeholder= "write your review here"></textarea>
+						<button class= "btn btn-primary offset-9 offset-md-10 offset-lg-11">Submit</button>
+					</form>
+				</div>
+			</div>
+			<div class= "row">
+				<div class= "col">
+					<div>
+						<p class= "mb-0"><b>Username</b></p>
+						<p>Review</p>
+					</div>
+					<div>
+						<p class= "mb-0"><b>Username</b></p>
+						<p>Review</p>
+					</div>
+					<div>
+						<p class= "mb-0"><b>Username</b></p>
+						<p>Review</p>
+					</div>
+					<a href= "" class= "nav-link text-end">Read More...</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+</div>
+
+
+<!-- This div wil contain the footer area -->
+<div class= "container-fluid">
+	<div class= "row allfooter">
+		<div class= "col-4 col-sm-2">
+			<ul style= "list-style-type: none; padding-left:0px">
+				<li><a href= "user_home.html" class= "nav-link text-light">Home</a></li>
+				<li><a href= "index.html" class= "nav-link text-light">Logout</a></li>
+				<li><a href= "site_faq.html" target= "_blank" class= "nav-link text-light">FAQ</a></li>
+				<li><a href= "site_contact.html" target= "_blank" class= "nav-link text-light">Contact Us</a></li>
+			</ul>
+		</div>
+		<div class= "col-4 col-sm-3">
+			<ul style= "list-style-type: none; padding-left:0px">
+				<li>
+					<a class= "nav-link text-light" href= "user_booking_history.html">Booking</a>
+					<ul>
+			            <li><a class="text-light" href="user_booking_history.html#pending" style= "text-decoration: none;">Pending Bookings</a></li>
+			            <li><a class="text-light" href="user_booking_history.html#booking_history"style= "text-decoration: none;">Booking History</a></li>
+			         </ul>
+				</li>
+				<li><a href= "user_settings.html" class= "nav-link text-light">Settings</a></li>
+			</ul>
+		</div>
+		<div class= "col mt-3">
+			<p><a href= "#"><img src= "images/twitter.png" alt= "twitter icon" height="32"></a></p>
+			<p><a href= "#"><img src= "images/facebook.png" alt= "facebook icon" height="32"></a></p>
+			<p><a href= "#"><img src= "images/instagram.png" alt= "instagram icon" height="32"></a></p>
+		</div>
+	</div>
+</div>
+
+
+
+<div class= "offcanvas offcanvas-end" id= "book_offcanvas">
+	<div class= "offcanvas-header">
+		<h3>Your Bookings</h3>
+	</div>
+	<div class= "offcanvas-body">
+		<div class= "row off_booking">
+			<div class= "col">
+				<div class= "row off_bookingtitle">
+					<div class= "col">
+						<h4>Added Requests</h4>
+					</div>
+				</div>
+				<div class= "row">
+					<div class= "col">
+						
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class= "row off_booking">
+			<div class= "col">
+				<div class= "row off_bookingtitle">
+					<div class= "col">
+						<h4>New Booking</h4>
+					</div>
+				</div>
+				<form>
+					<div class= "mb-2">
+					<label class="form-label">Choose Service</label>
+					<select name= "service" class= "form-select">
+						<option>Please Select Service</option>
+					</select>
+					</div>
+					<div class= "mb-2">
+					<label class="form-label">Date</label>
+					<input type= "date" class= "form-control">
+					</div>
+					<div class= "mb-2">
+					<label class="form-label">Time</label>
+					<input type= "time" class= "form-control">
+					</div>
+					<div class= "mb-2">
+					<label class="form-label">Duration</label>
+					<select name= "duration" class= "form-select">
+						<option value= "">Select duration of service</option>
+					</select>
+					</div>
+					<div class= "mb-2">
+						<label class= "form-label">Notes</label>
+						<textarea class= "form-control" name= "notes" placeholder= "Input any notes you have here"></textarea>
+					</div>
+					<button class= "btn btn-primary offset-8">Book Service</button>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- JS Files -->
+<script type= "text/javascript" src= "../libraries/jquery.js"></script>
+<script type= "text/javascript" src= "../libraries/bootstrap/js/bootstrap.bundle.js"></script>
+<script type= "text/javascript">
+
+
+</script>
+</body>
+</html>
