@@ -56,7 +56,7 @@
 						</div>
 						<div class= "mb-1">
 							<label class= "form-label">Username</label>
-							<input type= "text" class= "form-control" name= "password">
+							<input type= "text" class= "form-control" name= "password" id= "signup_username">
 						</div>
 						<div class= "mb-1">
 							<label class= "form-label">FullName</label>
@@ -75,13 +75,13 @@
 							<input type= "password" class= "form-control" name= "password">
 						</div>
 						<div class= "mb-1">
-							<input type= "radio" class= "" name= "user_type" id= "sel_customer">
-							<label class= "form-label" for= "sel_customer">Customer</label>
-							<input type= "radio" class= "" name= "user_type" id= "sel_vendor">
-							<label class= "form-label" for= "sel_vendor">Vendor</label>
+							<input type= "radio" class= "" name= "user_type" id= "signup_sel_customer">
+							<label class= "form-label" for= "signup_sel_customer">Customer</label>
+							<input type= "radio" class= "" name= "user_type" id= "signup_sel_vendor">
+							<label class= "form-label" for= "signup_sel_vendor">Vendor</label>
 							
 						</div>
-						<button class= "btn homebutton">Sign Up</button>
+						<button class= "btn homebutton" type= "button" id= "signup_button">Sign Up</button>
 					</form>
 
 				<p>Existing User? Login <span><a href= "login.html" class= "text-dark">here</a></span></p>
@@ -117,17 +117,7 @@
 <!-- JS Files -->
 <script type= "text/javascript" src= "../libraries/jquery.js"></script>
 <script type= "text/javascript" src= "../libraries/bootstrap/js/bootstrap.bundle.js"></script>
-<script type= "text/javascript">
-$(document).ready(function(){
-	$('#sel_customer').prop('checked', true);
-	$('#sel_vendor').click(function(){
-		$('#signup_form').attr('action', 'vendor_home.html')
-	});
-	$('#sel_customer').click(function(){
-		$('#signup_form').attr('action', 'user_home.html')
-	});
-});
-
+<script type= "text/javascript" src= "external_files/javascript.js">
 </script>
 </body>
 </html>

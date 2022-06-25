@@ -81,6 +81,21 @@ body { font-size: 1.25em; }
 	background-color: rgba(24, 24, 215, 1); color: rgba(248, 155, 78, 1);
 }/* This uniformly styles the section titles in the offcanvas booking sections */
 
+.info_heading{ font-weight: bold; }
+/* This contains the basic styles for the info-types when listing user/booking info in the admin pages  */
+
+.side_panel{ 
+	height: 100vh; position:fixed; left:0px; padding-top: 35vh;
+	background-color: rgba(24, 24, 215, 0.2);
+}	
+/* This styles the general area of the side panel */
+
+.buttom_border{ 
+	border-bottom: 1px solid rgba(24, 24, 215, 0.5);
+ }/* This is used to created buttom borders to act like demarkations */
+
+tbody tr:hover{ background-color: rgba(0, 0, 0, 0.3); }
+
 
 @media screen and (max-width: 769px){
 	.hidemd{ display:none; } /* Used to hide elements */
